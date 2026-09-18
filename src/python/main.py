@@ -7,7 +7,7 @@ operational_assets = []
 
 async def carregar_dados():
     global operational_assets
-    response = await pyfetch(".././dados.json")
+    response = await pyfetch("dados.json")
     operational_assets = await response.json()
     
     renderiza_cards(1)
