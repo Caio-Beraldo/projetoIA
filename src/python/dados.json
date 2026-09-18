@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Encomenda de Lanches Especiais",
+        "category": "Cantina Escolar",
+        "image": "./src/assets/lanche.jpg",
+        "description": "Lote de sanduíches naturais e sucos para o intervalo.",
+        "tempo_sugerido_ia": 45.0,
+        "tempo_disponivel": 50.0,
+        "fator_folga_minimo": 1.2,
+        "telemetry": {"drone_id": "N/A", "umidade": "N/A", "temp_solo": "N/A", "status": "Aguardando Cozinha"},
+        "embeddings": [0.12, -0.45, 0.89, 0.03, -0.21],
+        "pdf_source": "Cardápio e Regras de Produção da Cantina v2. Tolerância máxima: 5 min.",
+        "tokens_detectados": 142
+        'caracteres_detectados': 810
+    },
+    {
+        "id": 2,
+        "title": "Monitoramento da Lua",
+        "category": "Astrofísica & Espaço",
+        "image": "./src/assets/Lua.jpg",
+        "description": "Captura e análise interferométrica de crateras e relevo lunar via telescópio orbital.",
+        "tempo_sugerido_ia": 15.0,
+        "tempo_disponivel": 60.0,
+        "fator_folga_minimo": 1.2,
+        "telemetry": {"drone_id": "LUNAR-SAT-01", "umidade": "0.0% (Vácuo)", "temp_solo": "-120.5°C", "status": "Órbita Estável"},
+        "embeddings": [-0.34, 0.67, -0.12, 0.44, 0.15],
+        "pdf_source": "Relatório de Mapeamento Lunar - Missão Artemis Context. Análise espectral de regolito.",
+        "tokens_detectados": 198,
+        "caracteres_detectados": 1050
+    },
+    {
+        "id": 3,
+        "title": "Diagnóstico de Carro Elétrico",
+        "category": "Mobilidade & Automotive",
+        "image": "./src/assets/carro.jpg",
+        "description": "Inspeção térmica de baterias de íon-lítio e eficiência do trem de força elétrico.",
+        "tempo_sugerido_ia": 55.0,
+        "tempo_disponivel": 60.0,
+        "fator_folga_minimo": 1.2,
+        "telemetry": {"drone_id": "EV-DIAG-OBD", "umidade": "N/A", "temp_solo": "42.1°C (Bateria)", "status": "Em Diagnóstico"},
+        "embeddings": [0.55, -0.22, 0.11, -0.78, 0.33],
+        "pdf_source": "Manual Técnico de Manutenção Preventiva - Veículos Elétricos Gen-V. Parâmetros de Carga Rápida.",
+        "tokens_detectados": 165,
+        "caracteres_detectados": 920
+    },
+    {
+        "id": 4,
+        "title": "Monitoramento de Campo",
+        "categori": "IoT & Drones",
+        "image": "./src/assets/campo.jpg",
+        "description": "Topografia de terreno, umidade do solo e varredura de bacia hidrográfica por drone agrícola.",
+        "tempo_sugerido_ia": 20.0,
+        "tempo_disponivel": 90.0,
+        "fator_folga_minimo": 1.2,
+        "telemetry": {"drone_id": "AG-DRONE-09", "umidade": "28.4% (Ideal)", "temp_solo": "24.1°C", "status": "Estável"},
+        "embeddings": [0.21, 0.34, -0.55, 0.12, 0.88],
+        "pdf_source": "Plano Diretor Agrícola 2026. Monitoramento por sensores edge e espectrometria de ondas.",
+        "tokens_detectados": 180,
+        "caracteres_detectados": 980
+    }
+]

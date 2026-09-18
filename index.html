@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <titlle>Painel MultimodÃial</titlle>
+    <link rel="stylesheet" href="./src/cs/estilo.css">
+    <!-- importação do Pyscript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.2/core.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-content">
+            <div class="brand">
+                <span class="brand-icon">Projeto</span>
+             
+                <h1>CityCodeIA <span class="badge">Engine Web</h1></span>
+            </div>
+            <nav class="header-nav">
+                <span class="status-indicator online"></span>
+                <span class="status-text">Runtime Projeto Ativo</span>
+            </nav>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <section class="hero-section">
+            <h2>Sistema de Processamento Multimodal</h2>
+            <p>Clique em "Buscar Dados" em qualquer card para acionar o algoritmo Python de Guardrail e Telemetria.</p>
+        </section>
+
+        <!-- Grade de Cards -->
+        <section class="cards-grid-section">
+            <div class="section-title">
+                <h3>Ativos Operacionais Carregados (<span id="image-count">4</span>/4)</h3>
+                <button id="reset-btn" class="btn-secondary">Restaurar Padrão</button>
+            </div>
+       
+            <div class="cards-grid" id="cards-containr"></div>
+        </section>
+
+        <!-- Relatório Consolidado -->
+        <section class="report-section" id="report-section">
+            <div class="report-header">
+                <h3>Relatório Consolidado</h3>
+                <div class="report-actions">
+                    <button id="export-pdf-btn" class="btn-primary">Exportar Relatório</button>
+                </div>
+            </div>
+
+            <div class="report-grid">
+                <div class="report-card">
+                    <h4>Guardrail de Tempo</h4>
+                    <div class="metrics-list" id="guardrail-metrics">
+                        <span style="color: var(--text-muted)">Aguardando seleção de ativo...</span>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <h4>Telemetria de Campo & Sensores IoT</h4>
+                    <div class="token-stats" id="telemetry-stats-container">
+                        <span style="color: var(--text-muted)">Aguardando seleção de ativo...</span>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <h4>Embeddings Vetoriais (Dimensão 768)</h4>
+                    <div class="embeddings-viewer" id="embeddings-container">
+                        <span style="color: var(--text-muted)">Aguardando seleção de ativo...</span>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <h4>Extração Documental & OCR (PDF / Laudo)</h4>
+                    <div class="pdf-extraction-box" id="pdf-extraction-container">
+                        <span style="color: var(--text-muted)">Aguardando seleção de ativo...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 - CityCode.</p>
+    </footer>
+
+    <script type="py" src="./src/python/main.py" config='{"packages": ["numpy"]}'></script>
+</body>
+</html>
